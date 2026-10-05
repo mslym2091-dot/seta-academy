@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Seta Academy
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="sss.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================================= -->
+<!-- HEADER -->
+<!-- ================================= -->
+
+<header class="main-header">
+
+    <div class="logo-area">
+
+        <div class="logo-icon">
+            🎓
+        </div>
+
+        <div>
+
+            <h1>
+                Seta Academy
+            </h1>
+
+            <p>
+                منصة معادلة كلية هندسة وحاسبات
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="teacher-info">
+
+        <strong>
+            Mr Mohamed Selim
+        </strong>
+
+        <a
+            href="https://wa.me/201555934947"
+            target="_blank"
+        >
+            📱 01555934947
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================================= -->
+<!-- HOME PAGE -->
+<!-- ================================= -->
+
+<section
+    id="home"
+    class="page active"
+>
+
+    <div class="hero">
+
+        <div class="hero-icon">
+            🎓
+        </div>
+
+        <h2>
+            أهلاً بك في Seta Academy
+        </h2>
+
+        <p>
+            منصة تعليمية تساعدك في الاستعداد
+            لاختبارات معادلة كلية الهندسة والحاسبات.
+        </p>
+
+        <p>
+            اختر المسار الذي تريد البدء فيه.
+        </p>
+
+    </div>
+
+
+
+    <!-- TRACKS -->
+
+    <div class="tracks-container">
+
+
+        <!-- ENGINEERING -->
+
+        <div class="track-card engineering-card">
+
+            <div class="track-icon">
+                ⚙️
+            </div>
+
+            <h2>
+                معادلة كلية هندسة
+            </h2>
+
+            <p>
+                جميع المواد والمحاضرات
+                الخاصة بمعادلة كلية الهندسة.
+            </p>
+
+
+            <button
+                id="engineeringTrackBtn"
+                type="button"
+                onclick="openTrack('engineering')"
+            >
+                دخول المسار
+            </button>
+
+        </div>
+
+
+
+        <!-- COMPUTER -->
+
+        <div class="track-card computer-card">
+
+            <div class="track-icon">
+                💻
+            </div>
+
+            <h2>
+                معادلة حاسبات
+            </h2>
+
+            <p>
+                جميع المواد والمحاضرات
+                الخاصة بمعادلة الحاسبات.
+            </p>
+
+
+            <button
+                id="computerTrackBtn"
+                type="button"
+                onclick="openTrack('computer')"
+            >
+                دخول المسار
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- CONTACT -->
+
+    <div class="contact-box">
+
+        <h3>
+            📞 تواصل مع Mr Mohamed Selim
+        </h3>
+
+        <p>
+            للاستفسارات أو التواصل
+        </p>
+
+        <a
+            href="https://wa.me/201555934947"
+            target="_blank"
+        >
+            التواصل عبر WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- ENGINEERING PAGE -->
+<!-- ================================= -->
+
+<section
+    id="engineering"
+    class="page"
+>
+
+
+    <div class="page-header">
+
+        <button
+            type="button"
+            onclick="goHome()"
+            class="back-button"
+        >
+            ← الرئيسية
+        </button>
+
+
+        <div>
+
+            <h2>
+                ⚙️ معادلة كلية هندسة
+            </h2>
+
+            <p>
+                اختر المادة التي تريد دراستها
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="subjects-grid">
+
+
+        <!-- MATH 1 -->
+
+        <div
+            class="subject-card math-theme"
+            onclick="openSubject('math1')"
+        >
+
+            <div class="subject-icon">
+                📈
+            </div>
+
+            <h3>
+                رياضة 1
+            </h3>
+
+            <p>
+                التفاضل والتكامل
+            </p>
+
+        </div>
+
+
+
+        <!-- ALGEBRA -->
+
+        <div
+            class="subject-card algebra-theme"
+            onclick="openSubject('algebra')"
+        >
+
+            <div class="subject-icon">
+                📐
+            </div>
+
+            <h3>
+                رياضة 2
+            </h3>
+
+            <p>
+                الجبر والهندسة الفراغية
+            </p>
+
+        </div>
+
+
+
+        <!-- MECHANICS -->
+
+        <div
+            class="subject-card mechanics-theme"
+            onclick="openSubject('mechanics')"
+        >
+
+            <div class="subject-icon">
+                ⚙️
+            </div>
+
+            <h3>
+                الميكانيكا
+            </h3>
+
+            <p>
+                استاتيكا وديناميكا
+            </p>
+
+        </div>
+
+
+
+        <!-- PHYSICS -->
+
+        <div
+            class="subject-card physics-theme"
+            onclick="openSubject('physics')"
+        >
+
+            <div class="subject-icon">
+                ⚛️
+            </div>
+
+            <h3>
+                الفيزياء
+            </h3>
+
+            <p>
+                شرح ومراجعة الفيزياء
+            </p>
+
+        </div>
+
+
+
+        <!-- CHEMISTRY -->
+
+        <div
+            class="subject-card chemistry-theme"
+            onclick="openSubject('chemistry')"
+        >
+
+            <div class="subject-icon">
+                🧪
+            </div>
+
+            <h3>
+                الكيمياء
+            </h3>
+
+            <p>
+                شرح ومراجعة الكيمياء
+            </p>
+
+        </div>
+
+
+
+        <!-- ENGLISH -->
+
+        <div
+            class="subject-card english-theme"
+            onclick="openSubject('english')"
+        >
+
+            <div class="subject-icon">
+                🇬🇧
+            </div>
+
+            <h3>
+                English
+            </h3>
+
+            <p>
+                اللغة الإنجليزية
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- COMPUTER PAGE -->
+<!-- ================================= -->
+
+<section
+    id="computer"
+    class="page"
+>
+
+
+    <div class="page-header">
+
+        <button
+            type="button"
+            onclick="goHome()"
+            class="back-button"
+        >
+            ← الرئيسية
+        </button>
+
+
+        <div>
+
+            <h2>
+                💻 معادلة حاسبات
+            </h2>
+
+            <p>
+                اختر المادة التي تريد دراستها
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="subjects-grid">
+
+
+        <!-- CALCULUS -->
+
+        <div
+            class="subject-card math-theme"
+            onclick="openSubject('math1')"
+        >
+
+            <div class="subject-icon">
+                📈
+            </div>
+
+            <h3>
+                التفاضل والتكامل
+            </h3>
+
+            <p>
+                شرح ومحاضرات التفاضل والتكامل
+            </p>
+
+        </div>
+
+
+
+        <!-- ALGEBRA -->
+
+        <div
+            class="subject-card algebra-theme"
+            onclick="openSubject('algebra')"
+        >
+
+            <div class="subject-icon">
+                📐
+            </div>
+
+            <h3>
+                الجبر والهندسة الفراغية
+            </h3>
+
+            <p>
+                شرح ومحاضرات الجبر والهندسة الفراغية
+            </p>
+
+        </div>
+
+
+
+        <!-- PHYSICS -->
+
+        <div
+            class="subject-card physics-theme"
+            onclick="openSubject('physics')"
+        >
+
+            <div class="subject-icon">
+                ⚛️
+            </div>
+
+            <h3>
+                الفيزياء
+            </h3>
+
+            <p>
+                شرح ومحاضرات الفيزياء
+            </p>
+
+        </div>
+
+
+
+        <!-- ENGLISH -->
+
+        <div
+            class="subject-card english-theme"
+            onclick="openSubject('english')"
+        >
+
+            <div class="subject-icon">
+                🇬🇧
+            </div>
+
+            <h3>
+                English
+            </h3>
+
+            <p>
+                شرح ومحاضرات اللغة الإنجليزية
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- SUBJECT PAGE -->
+<!-- ================================= -->
+
+<section
+    id="subject"
+    class="page"
+>
+
+
+    <div class="page-header">
+
+        <button
+            type="button"
+            onclick="goBackFromSubject()"
+            class="back-button"
+        >
+            ← رجوع للمواد
+        </button>
+
+    </div>
+
+
+    <div
+        id="subjectHeader"
+        class="subject-header"
+    >
+    </div>
+
+
+    <div
+        id="subjectContent"
+        class="subject-content"
+    >
+    </div>
+
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- VIDEO MODAL -->
+<!-- ================================= -->
+
+<div
+    id="videoModal"
+    class="video-modal"
+>
+
+
+    <div class="video-modal-content">
+
+
+        <button
+            type="button"
+            class="close-video"
+            onclick="closeVideo()"
+        >
+            ×
+        </button>
+
+
+        <h3
+            id="videoTitle"
+            class="video-title"
+        >
+            المحاضرة
+        </h3>
+
+
+        <div class="video-frame-container">
+
+            <iframe
+                id="youtubeFrame"
+                src=""
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            >
+            </iframe>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================= -->
+<!-- FOOTER -->
+<!-- ================================= -->
+
+<footer class="main-footer">
+
+    <h3>
+        Seta Academy
+    </h3>
+
+    <p>
+        معادلة كلية هندسة وحاسبات
+    </p>
+
+    <p>
+        Mr Mohamed Selim
+    </p>
+
+    <a
+        href="https://wa.me/201555934947"
+        target="_blank"
+    >
+        📱 01555934947
+    </a>
+
+    <p class="copyright">
+        © 2026 Seta Academy
+    </p>
+
+</footer>
+
+
+
+<!-- ================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================= -->
+
+<script src="منصه.js"></script>
+
+
+</body>
+
+</html>
